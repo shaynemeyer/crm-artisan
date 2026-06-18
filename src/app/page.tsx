@@ -7,12 +7,9 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <p className="text-sm font-mono text-zinc-500">
-        Supabase:{" "}
-        <span className={error ? "text-red-500" : "text-green-600"}>
-          {status}
-        </span>
-      </p>
+      <h1 className="text-2xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+        CRM Artisan &mdash; Coming Soon
+      </h1>
     </main>
   );
 }
