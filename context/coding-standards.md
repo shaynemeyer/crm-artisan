@@ -104,6 +104,18 @@ Example v4 configuration:
 - Client components handle tRPC errors via the `onError` callback or `error` property from `useQuery`/`useMutation`
 - Display user-friendly error messages via toast
 
+## UI & Layout
+
+- Sidebar navigation on the left (Dashboard, Clients, Job Sites, Quotes); main content area on the right
+- Primary action buttons: blue (`bg-primary`), placed top-right of the content area
+- Destructive actions (delete): red (`bg-destructive`), always require a confirmation `Dialog` before executing
+- Lists use tables on desktop, cards on mobile — use a single component that switches layout via responsive classes
+- All forms open in a shadcn/ui `Sheet` (slide-over panel) — no inline or full-page forms
+- Toast messages (shadcn/ui `Sonner`) for all success and error feedback after actions
+- Use shadcn/ui components throughout — do not mix with other component libraries
+- Consistent spacing: follow the Tailwind spacing scale; do not use arbitrary values unless necessary
+- Consistent typography: use the defined type scale from `globals.css`; do not set one-off font sizes inline
+
 ## Code Quality
 
 - No commented-out code unless specified
